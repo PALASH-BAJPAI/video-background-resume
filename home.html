@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <title>PALASH</title>
+</head>
+
+<body>
+    <header>
+        <div class="art">
+            <h2 id="text">I am
+                <span style="display: initial;">PROGRAMMER</span><span>WEB DEVELOPER</span><span>DESIGNER</span></h2>
+        </div>
+        <div class="toggle"><a href="About.html"><img class="wow" src="pb.png"></a></div>
+    </header>
+    <div class="banner">
+        <video src="vid.mov" autoplay muted loop type="mp4"></video>
+        <div class="textBox">
+            <h2>&nbspKnow About Me</h2>
+            <p>Hii, I'm Palash, web developer, python programmer and designer. Click down to find some more.
+            </p>
+            <a class="butn" href="About.html">About Me</a>
+            <h2>&nbspMy Projects</h2>
+            <p>If you doubt my work, Just have a look on some cool stuffs made by me.
+            </p>
+            <a class="butn" href="#">Projects</a>
+        </div>
+
+        <div class="imgBox">
+            <img src="p.png">
+        </div>
+        <ul class="sci">
+            <li>
+                <a href="https://m.facebook.com/palash.bajpai.12"><img src="facebook.png"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/palash-bajpai/"><img src="li.png" style="width:51px; height:51px; filter:invert(1)"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/palashbajpai/"><img src="instagram.png"></a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var text = document.getElementById('text');
+        var word = text.getElementsByTagName('span');
+        var i = 0;
+
+        function rotator() {
+            word[i].style.display = 'none';
+            i = (i + 1) % word.length;
+            word[i].style.display = 'initial';
+        }
+        setInterval(rotator, 1200);
+    </script>
+</body>
+
+</html>
